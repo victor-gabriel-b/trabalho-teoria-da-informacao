@@ -43,8 +43,11 @@ def lzw_encode_file(input_file, output_file, n, dictionary=None, reset_when_full
                     dictionary[string_plus_symbol] = dictionary_size
                     dictionary_size += 1
                 elif reset_when_full:
+                    print("HIT DICT CAP")
                     dictionary_size = 256
-                    dictionary = {chr(i): i for i in range(dictionary_size)} 
+                    dictionary = {chr(i): i for i in range(dictionary_size)}
+                else:
+                    print("HIT DICT CAP")
                 string = symbol
 
             if counter%100 == 0:

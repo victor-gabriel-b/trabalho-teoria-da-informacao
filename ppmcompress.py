@@ -17,7 +17,7 @@ import os
 
 
 # Must be at least -1 and match ppm-decompress.py. Warning: Exponential memory usage at O(257^n).
-MODEL_ORDER = 4
+MODEL_ORDER = 6
 
 
 def compress_file(inputfile, outputfile, model=None):

@@ -14,7 +14,7 @@ import arithmeticcoding, ppmmodel
 
 
 # Must be at least -1 and match ppm-compress.py. Warning: Exponential memory usage at O(257^n).
-MODEL_ORDER = 4
+MODEL_ORDER = 6
 
 
 # Command line main application function.
